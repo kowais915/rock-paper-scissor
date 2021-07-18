@@ -68,4 +68,29 @@ function rounds(player, comp){
 
 }
 
-console.log(rounds("rock", comp));
+// console.log(rounds("rock", comp));
+
+// game function
+
+function game(){
+
+
+
+
+    let counter = 0;
+    do{
+
+        let user = prompt("Enter Rock, Paper or Scissor: ");
+
+        let comp = compPlay();
+
+       
+        console.log(rounds(user, comp));
+       
+
+        counter++;
+    }
+    while(counter<5);
+}
+
+game();
